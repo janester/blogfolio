@@ -15,9 +15,8 @@
  *= require 'foundation'
  *= require_tree .
  */
- @import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
-
-$red: rgb(241, 112, 112);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
+@import '_variables.css.scss';
 
 body {
   background: lighten(black, 25%) !important;
@@ -25,6 +24,7 @@ body {
   h1 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
+    font-size: 2em;
   }
   .main-content {
     background: $red;
