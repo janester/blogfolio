@@ -21,8 +21,11 @@
 body {
   background: lighten(black, 25%) !important;
   color: white;
-  h1 {
+  h1, h2, h3, h4, h5, h6 {
+    color: white;
     font-family: 'Raleway', sans-serif;
+  }
+  h1 {
     font-weight: 700;
     font-size: 2em;
   }
