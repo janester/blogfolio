@@ -1,4 +1,4 @@
-%div{style: "height: 15px"}
+%div{style: "height: 20px"}
 .nav
   - @buttons.each do |button|
-    .small-2.columns.nav-item= "#{button.upcase}"
+    .small-2.columns.nav-item{:class => ("active" if @active == button)}= link_to("#{button.upcase}", button)

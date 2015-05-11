@@ -2,7 +2,7 @@
 
 .nav {
   text-align: center;
-  background-color: rgb(240, 241, 245);
+  background-color: $lightest-grey;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   color: grey;
@@ -11,8 +11,16 @@
     background-color: rgb(240, 241, 245);
     line-height: 150px;
   }
+  a {
+    color: $light-grey;
+  }
 
   .active {
-    background-color: lighten(black, 85%);
+    background-color: $light-grey;
+    padding-top: 10px;
+    top: $active-top;
+    a {
+      color: $medium-grey;
+    }
   }
 }

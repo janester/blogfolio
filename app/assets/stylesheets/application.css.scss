@@ -26,11 +26,15 @@ body {
     font-weight: 700;
     font-size: 2em;
   }
-  .main-content {
-    background: $red;
-    height: 500px;
-    h1 {
-      color: white;
+  .main-row {
+    top: $active-top;
+    position: relative;
+    .main-content {
+      background: $red;
+      height: 500px;
+      h1 {
+        color: white;
+      }
     }
   }
 }

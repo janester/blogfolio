@@ -2,8 +2,9 @@
 .sidebar {
   background: rgb(85, 92, 112);
   height: 500px;
+  text-align: center;
   h1 {
     margin: 0;
-    color: lighten(black, 85%);
+    color: $light-grey;
   }
 }
