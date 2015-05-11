@@ -1,15 +1,13 @@
 .nav {
   text-align: center;
-  top: 10px;
   background-color: rgb(240, 241, 245);
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   color: grey;
   .nav-item {
-    display: inline-block;
-    width: 200px;
-    height: 160px;
     border-left: 1px solid rgb(224, 224, 224);
+    background-color: rgb(240, 241, 245);
+    line-height: 150px;
   }
 
   .active {

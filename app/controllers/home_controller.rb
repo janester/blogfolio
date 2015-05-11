@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
+  before_action :set_nav
   def index
-    @buttons = %w(home resume services portfolio blog)
   end
 end

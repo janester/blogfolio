@@ -10,8 +10,27 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
  *= require_self
  *= require 'normalize'
+ *= require 'foundation'
+ *= require_tree .
  */
  @import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
+
+$red: rgb(241, 112, 112);
+
+body {
+  background: lighten(black, 25%) !important;
+  color: white;
+  h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+  }
+  .main-content {
+    background: $red;
+    height: 500px;
+    h1 {
+      color: white;
+    }
+  }
+}

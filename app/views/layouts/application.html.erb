@@ -7,9 +7,19 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<%= render partial: "nav/nav_buttons" %>
-
-<%= yield %>
+  <div class="row">
+      <div class="row">
+        <%= render partial: "nav/nav_buttons" %>
+      </div>
+      <div class="row">
+        <div class="small-4 columns" style="padding: 0;">
+          <%= render partial: "nav/side_bar" %>
+        </div>
+        <div class="small-8 columns main-content" style="padding: 0;">
+          <%= yield %>
+        </div>
+      </div>
+  </div>
 
 </body>
 </html>
