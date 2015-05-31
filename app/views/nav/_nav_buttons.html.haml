@@ -3,4 +3,4 @@
   - HomeController::PAGES.each do |button|
     %a.large-2.columns.nav-item{:class => ("active" if params[:action] == button), href: "/#{button}"}
       .icon{class: "icon-#{button}"}
-      %div= button.upcase
+      .nav-text= button.upcase

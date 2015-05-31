@@ -3,6 +3,28 @@
 $nav-side-padding: 75px;
 $nav-height: 150px;
 
+@-webkit-keyframes borderGrow {
+  from {
+    border: none;
+  }
+  to {
+    border: 5px solid $active-grey;
+    border-radius: 50%;
+    background: $active-grey;
+  }
+}
+
+@keyframes borderGrow {
+  from {
+    border: none;
+  }
+  to {
+    border: 5px solid $active-grey;
+    border-radius: 50%;
+    background: $active-grey;
+  }
+}
+
 .nav {
   text-align: center;
   background-color: $nav-item-background;
@@ -19,6 +41,13 @@ $nav-height: 150px;
     background-color: $nav-item-background;
     height: 100%;
     padding-top: 40px;
+    padding-left: 0;
+    padding-right: 0;
+
+    .nav-text {
+      position: absolute;
+      width: 100%;
+    }
   }
 
   a:hover {
@@ -56,19 +85,17 @@ $nav-height: 150px;
   }
 
   .nav-item:hover {
-    padding-top: 30px;
     .icon {
       color: white;
       border: 5px solid $active-grey;
       border-radius: 50%;
       background: $active-grey;
+      -webkit-animation: borderGrow .25s;
+      animation: borderGrow .25s;
     }
   }
 
-  .nav-item.active:hover {
-    padding-top: 40px;
-    .icon {
-      color: $red;
-    }
+  .nav-item.active:hover .icon{
+    color: $red;
   }
 }
