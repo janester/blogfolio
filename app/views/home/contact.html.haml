@@ -1,1 +1,19 @@
 = render partial: "top_bar", locals: {page: params[:action], tagline: "get in touch"}
+.row#contact
+  .row
+    .larg-12.columns
+      %img{src: "https://maps.googleapis.com/maps/api/staticmap?center=haight+ashbury&zoom=12&scale=2&size=1000x200&maptype=roadmap&markers=icon:http://goo.gl/ubViM3|37.777246,-122.487005"}
+  .row
+    .large-4.columns
+      .contact-row
+        .icon.icon-location
+        %h4 San Francisco, CA
+    .large-4.columns
+      .contact-row
+        .icon.icon-envelop
+        %a{href: "mailto:janesternbach@gmail.com?subject=Hi. From, <enter your name here>", target: "_blank"}
+          %h4 janesternbach@gmail.com
+    .large-4.columns
+      .contact-row
+        .icon.icon-phone
+        %h4 646-327-5054
