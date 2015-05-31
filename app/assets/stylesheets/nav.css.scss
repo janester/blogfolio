@@ -11,6 +11,7 @@ $nav-height: 150px;
     border: 5px solid $active-grey;
     border-radius: 50%;
     background: $active-grey;
+    font-size: 35px;
   }
 }
 
@@ -22,6 +23,7 @@ $nav-height: 150px;
     border: 5px solid $active-grey;
     border-radius: 50%;
     background: $active-grey;
+    font-size: 35px;
   }
 }
 
@@ -90,6 +92,7 @@ $nav-height: 150px;
       border: 5px solid $active-grey;
       border-radius: 50%;
       background: $active-grey;
+      font-size: 35px;
       -webkit-animation: borderGrow .25s;
       animation: borderGrow .25s;
     }
