@@ -22,6 +22,7 @@
 body {
   background: lighten(black, 25%) !important;
   color: white;
+  overflow: hidden;
   h1, h2, h3, h4, h5, h6 {
     color: white;
     font-family: 'Raleway', sans-serif;
@@ -35,8 +36,10 @@ body {
     top: $active-top;
     position: relative;
     .main-content {
+      overflow-y: scroll;
+      overflow-x: hidden;
+      height: 750px;
       background: $red;
-      height: 500px;
       h1 {
         color: white;
       }
