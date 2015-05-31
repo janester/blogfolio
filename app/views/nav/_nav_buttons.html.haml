@@ -1,4 +1,6 @@
 %div{style: "height: 50px"}
 .nav
   - @buttons.each do |button|
-    .large-2.columns.nav-item{:class => ("active" if @active == button)}= link_to("#{button.upcase}", button)
+    %a.large-2.columns.nav-item{:class => ("active" if @active == button), href: "/#{button}"}
+      .icon{class: "icon-#{button}"}
+      %div= button.upcase

@@ -12,24 +12,38 @@ $nav-height: 150px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   color: grey;
+
   .nav-item {
     border-left: 1px solid rgb(224, 224, 224);
     border-right: 1px solid white;
     background-color: $nav-item-background;
-    line-height: $nav-height;
+    height: 100%;
+    padding-top: 40px;
+  }
+
+  a:hover {
+    text-decoration: none;
   }
 
   a {
     color: $light-grey;
+
+  }
+
+  a:hover {
+    text-decoration: none;
   }
 
   .active {
     background-color: $light-grey;
-    padding-top: 10px;
+    padding-top: 50px;
     top: $active-top;
     border: none;
-    a {
-      color: $medium-grey;
-    }
+    color: $medium-grey;
+  }
+
+  .icon {
+    font-size: 30px;
+    margin-bottom: 10px;
   }
 }
